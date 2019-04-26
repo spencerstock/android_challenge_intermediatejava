@@ -25,7 +25,12 @@ public class MainActivity extends AppCompatActivity {
         doubleClickView.SetOnClickListener(new DoubleClickListener() {
             @Override
             public void OnDoubleClick() {
-                Toast.makeText(context, "Success!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Double Click Processed", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void OnSingleClick() {
+                Toast.makeText(context, "Single Click Processed", Toast.LENGTH_SHORT).show();
             }
         });
 

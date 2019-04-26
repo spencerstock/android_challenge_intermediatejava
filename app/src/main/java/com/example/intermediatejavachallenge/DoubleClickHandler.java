@@ -5,7 +5,7 @@ import android.view.View;
 
 public class DoubleClickHandler implements DoubleClickInterface{
     private DoubleClickListener doubleClickListener;
-    private View view;
+    public View view;
 
     public DoubleClickHandler(View view) {
         this.view = view;
